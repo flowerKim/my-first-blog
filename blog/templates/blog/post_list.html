@@ -5,7 +5,16 @@
     <title>dahye's blog</title>
 </head>
 <body>
+   {{posts}}
     <p>hi there!</p>
     <p>It works!</p>
+    
+    {% for post in posts %}
+        <p>published: {{post.published_date}}</p>
+        <p>{{post.title}}</p>
+        <p>{{post.text|linebreaksbr}}</p>
+    {% endfor %}
+    
+    
 </body>
 </html>
