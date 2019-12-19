@@ -126,4 +126,4 @@ STATICFILES_DIRS = (
         "D:/djangogirls/myvenv/Scripts/blog/static", 
 )
 
-
+LOGIN_REDIRECT_URL = '/'
